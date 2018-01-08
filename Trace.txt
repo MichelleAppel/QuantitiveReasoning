@@ -1,0 +1,1072 @@
+-----------------------------------------------------
+State 1
+Current node:
+inflow : (0, 0)
+volume : (0, 0)
+outflow: (0, 0)
+
+The current situation:
+There is no inflow and the inflow remains the same.
+There is no volume and the volume remains the same.
+There is no outflow and the outflow remains the same.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow remains the same, so there will be no inflow.
+The volume remains the same, so there will be no volume.
+The outflow remains the same, so there will be no outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There no inflow and no outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Prototype 1 result:
+inflow : (0, 0)
+volume : (0, 0)
+outflow: (0, 0)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (0, 0)
+volume : (0, 0)
+outflow: (0, 0)
+
+open the tap, which results in the following child:
+inflow : (0, +)
+volume : (0, 0)
+outflow: (0, 0)
+
+-----------------------------------------------------
+State 2
+Current node:
+inflow : (0, +)
+volume : (0, 0)
+outflow: (0, 0)
+
+The current situation:
+There is no inflow and the inflow is increasing.
+There is no volume and the volume remains the same.
+There is no outflow and the outflow remains the same.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is increasing, so there will be some inflow.
+The volume remains the same, so there will be no volume.
+The outflow remains the same, so there will be no outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and no outflow, and the inflow in the previous situation is increasing,
+so the volume is increasing and the outflow is increasing.
+
+Prototype 1 result:
+inflow : (+, +)
+volume : (0, +)
+outflow: (0, +)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was open the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (0, +)
+outflow: (0, +)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (0, +)
+outflow: (0, +)
+
+-----------------------------------------------------
+State 3
+Current node:
+inflow : (+, 0)
+volume : (0, +)
+outflow: (0, +)
+
+The current situation:
+There is some inflow and the inflow remains the same.
+There is no volume and the volume is increasing.
+There is no outflow and the outflow is increasing.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow remains the same, so there will be some inflow.
+The volume is increasing, so there will be some volume.
+The outflow is increasing, so there will be some outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Prototype 1 result:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, 0)
+outflow: (+, 0)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (+, 0)
+outflow: (+, 0)
+
+-----------------------------------------------------
+State 4
+Current node:
+inflow : (+, +)
+volume : (0, +)
+outflow: (0, +)
+
+The current situation:
+There is some inflow and the inflow is increasing.
+There is no volume and the volume is increasing.
+There is no outflow and the outflow is increasing.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is increasing, so there will be some inflow.
+The volume is increasing, so there will be some volume.
+The outflow is increasing, so there will be some outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation is increasing,
+so the volume is increasing and the outflow is increasing.
+
+Prototype 1 result:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was open the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, +)
+outflow: (+, +)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+-----------------------------------------------------
+State 5
+Current node:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+The current situation:
+There is some inflow and the inflow remains the same.
+There is some volume and the volume remains the same.
+There is some outflow and the outflow remains the same.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow remains the same, so there will be some inflow.
+The volume remains the same, so there will be some volume.
+The outflow remains the same, so there will be some outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Prototype 1 result:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, 0)
+outflow: (+, 0)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (+, 0)
+outflow: (+, 0)
+
+-----------------------------------------------------
+State 6
+Current node:
+inflow : (+, +)
+volume : (+, 0)
+outflow: (+, 0)
+
+The current situation:
+There is some inflow and the inflow is increasing.
+There is some volume and the volume remains the same.
+There is some outflow and the outflow remains the same.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is increasing, so there will be some inflow.
+The volume remains the same, so there will be some volume.
+The outflow remains the same, so there will be some outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation is increasing,
+so the volume is increasing and the outflow is increasing.
+
+Prototype 1 result:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was open the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, +)
+outflow: (+, +)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+-----------------------------------------------------
+State 7
+Current node:
+inflow : (+, -)
+volume : (+, 0)
+outflow: (+, 0)
+
+The current situation:
+There is some inflow and the inflow is decreasing.
+There is some volume and the volume remains the same.
+There is some outflow and the outflow remains the same.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is decreasing, so there will be no inflow.
+The volume remains the same, so there will be some volume.
+The outflow remains the same, so there will be some outflow.
+
+Prototype 2 was created:
+There some inflow and it still is decreasing without reaching 0, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There no inflow and some outflow, and the inflow in the previous situation is decreasing,
+so the volume is decreasing and the outflow is decreasing.
+
+Prototype 1 result:
+inflow : (0, -)
+volume : (+, -)
+outflow: (+, -)
+
+
+For prototype no 2:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation is decreasing,
+so the volume is decreasing and the outflow is decreasing.
+
+Prototype 2 result:
+inflow : (+, -)
+volume : (+, -)
+outflow: (+, -)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was close the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (0, 0)
+volume : (+, -)
+outflow: (+, -)
+
+
+Now some action(s) for prototype 2 on the tap can be performed.
+If the last action was close the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, -)
+outflow: (+, -)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (+, -)
+outflow: (+, -)
+
+-----------------------------------------------------
+State 8
+Current node:
+inflow : (+, 0)
+volume : (+, +)
+outflow: (+, +)
+
+The current situation:
+There is some inflow and the inflow remains the same.
+There is some volume and the volume is increasing.
+There is some outflow and the outflow is increasing.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow remains the same, so there will be some inflow.
+The volume is increasing, so there will be a maximum amount of volume.
+The outflow is increasing, so there will be a maximum amount of outflow.
+
+Prototype 2 was created:
+There some volume and it still is increasing without reaching max, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and a maximum amount of outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Rule 2: With maximum volume, the inflow has to be positive.
+There is a maximum amount of volume, so there has to be some inflow
+
+Prototype 1 result:
+inflow : (+, 0)
+volume : (max, 0)
+outflow: (max, 0)
+
+
+For prototype no 2:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Prototype 2 result:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (max, 0)
+outflow: (max, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (max, 0)
+outflow: (max, 0)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (max, 0)
+outflow: (max, 0)
+
+
+Now some action(s) for prototype 2 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, 0)
+outflow: (+, 0)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (+, 0)
+outflow: (+, 0)
+
+-----------------------------------------------------
+State 9
+Current node:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+The current situation:
+There is some inflow and the inflow is increasing.
+There is some volume and the volume is increasing.
+There is some outflow and the outflow is increasing.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is increasing, so there will be some inflow.
+The volume is increasing, so there will be a maximum amount of volume.
+The outflow is increasing, so there will be a maximum amount of outflow.
+
+Prototype 2 was created:
+There some volume and it still is increasing without reaching max, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and a maximum amount of outflow, and the inflow in the previous situation is increasing,
+so the volume is increasing and the outflow is increasing.
+
+Rule 2: With maximum volume, the inflow has to be positive.
+There is a maximum amount of volume, so there has to be some inflow
+
+There is a maximum amount of volume and the volume remains the same, so the tank is overflowing.
+Something there is a maximum amount of cannot increase, so the derivative is 0.
+
+Prototype 1 result:
+inflow : (+, +)
+volume : (max, 0)
+outflow: (max, 0)
+
+
+For prototype no 2:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation is increasing,
+so the volume is increasing and the outflow is increasing.
+
+Prototype 2 result:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was open the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (max, 0)
+outflow: (max, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (max, 0)
+outflow: (max, 0)
+
+
+Now some action(s) for prototype 2 on the tap can be performed.
+If the last action was open the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, +)
+outflow: (+, +)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+-----------------------------------------------------
+State 10
+Current node:
+inflow : (0, 0)
+volume : (+, -)
+outflow: (+, -)
+
+The current situation:
+There is no inflow and the inflow remains the same.
+There is some volume and the volume is decreasing.
+There is some outflow and the outflow is decreasing.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow remains the same, so there will be no inflow.
+The volume is decreasing, so there will be no volume.
+The outflow is decreasing, so there will be no outflow.
+
+Prototype 2 was created:
+There some volume and it still is decreasing without reaching 0, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There no inflow and no outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Prototype 1 result:
+inflow : (0, 0)
+volume : (0, 0)
+outflow: (0, 0)
+
+
+For prototype no 2:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There no inflow and some outflow, and the inflow in the previous situation remains the same,
+so the volume is decreasing and the outflow is decreasing.
+
+Prototype 2 result:
+inflow : (0, 0)
+volume : (+, -)
+outflow: (+, -)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (0, 0)
+volume : (0, 0)
+outflow: (0, 0)
+
+open the tap, which results in the following child:
+inflow : (0, +)
+volume : (0, 0)
+outflow: (0, 0)
+
+
+Now some action(s) for prototype 2 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (0, 0)
+volume : (+, -)
+outflow: (+, -)
+
+open the tap, which results in the following child:
+inflow : (0, +)
+volume : (+, -)
+outflow: (+, -)
+
+-----------------------------------------------------
+State 11
+Current node:
+inflow : (+, 0)
+volume : (+, -)
+outflow: (+, -)
+
+The current situation:
+There is some inflow and the inflow remains the same.
+There is some volume and the volume is decreasing.
+There is some outflow and the outflow is decreasing.
+
+Rule 0: Derivative changes next state's values
+
+Prototype 1 was created:
+There some volume and it still is decreasing without reaching 0, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Prototype 1 result:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, 0)
+outflow: (+, 0)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (+, 0)
+outflow: (+, 0)
+
+-----------------------------------------------------
+State 12
+Current node:
+inflow : (+, -)
+volume : (+, -)
+outflow: (+, -)
+
+The current situation:
+There is some inflow and the inflow is decreasing.
+There is some volume and the volume is decreasing.
+There is some outflow and the outflow is decreasing.
+
+Rule 0: Derivative changes next state's values
+
+Prototype 1 was created:
+There some volume and it still is decreasing without reaching 0, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There no inflow and some outflow, and the inflow in the previous situation is decreasing,
+so the volume is decreasing and the outflow is decreasing.
+
+Prototype 1 result:
+inflow : (0, -)
+volume : (+, -)
+outflow: (+, -)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was close the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (0, 0)
+volume : (+, -)
+outflow: (+, -)
+
+-----------------------------------------------------
+State 13
+Current node:
+inflow : (+, 0)
+volume : (max, 0)
+outflow: (max, 0)
+
+The current situation:
+There is some inflow and the inflow remains the same.
+There is a maximum amount of volume and the volume remains the same.
+There is a maximum amount of outflow and the outflow remains the same.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow remains the same, so there will be some inflow.
+The volume remains the same, so there will be a maximum amount of volume.
+The outflow remains the same, so there will be a maximum amount of outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and a maximum amount of outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Rule 2: With maximum volume, the inflow has to be positive.
+There is a maximum amount of volume, so there has to be some inflow
+
+Rule 3: When max volume in the previous situation, the inflow has to be positive.
+There is a maximum amount of volume in the previous situation, so there has to be some inflow
+
+Prototype 1 result:
+inflow : (+, 0)
+volume : (max, 0)
+outflow: (max, 0)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (max, 0)
+outflow: (max, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (max, 0)
+outflow: (max, 0)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (max, 0)
+outflow: (max, 0)
+
+-----------------------------------------------------
+State 14
+Current node:
+inflow : (+, +)
+volume : (max, 0)
+outflow: (max, 0)
+
+The current situation:
+There is some inflow and the inflow is increasing.
+There is a maximum amount of volume and the volume remains the same.
+There is a maximum amount of outflow and the outflow remains the same.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is increasing, so there will be some inflow.
+The volume remains the same, so there will be a maximum amount of volume.
+The outflow remains the same, so there will be a maximum amount of outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and a maximum amount of outflow, and the inflow in the previous situation is increasing,
+so the volume is increasing and the outflow is increasing.
+
+Rule 2: With maximum volume, the inflow has to be positive.
+There is a maximum amount of volume, so there has to be some inflow
+
+Rule 3: When max volume in the previous situation, the inflow has to be positive.
+There is a maximum amount of volume in the previous situation, so there has to be some inflow
+
+There is a maximum amount of volume and the volume remains the same, so the tank is overflowing.
+Something there is a maximum amount of cannot increase, so the derivative is 0.
+
+Prototype 1 result:
+inflow : (+, +)
+volume : (max, 0)
+outflow: (max, 0)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was open the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (max, 0)
+outflow: (max, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (max, 0)
+outflow: (max, 0)
+
+-----------------------------------------------------
+State 15
+Current node:
+inflow : (+, -)
+volume : (max, 0)
+outflow: (max, 0)
+
+The current situation:
+There is some inflow and the inflow is decreasing.
+There is a maximum amount of volume and the volume remains the same.
+There is a maximum amount of outflow and the outflow remains the same.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is decreasing, so there will be no inflow.
+The volume remains the same, so there will be a maximum amount of volume.
+The outflow remains the same, so there will be a maximum amount of outflow.
+
+Prototype 2 was created:
+There some inflow and it still is decreasing without reaching 0, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There no inflow and a maximum amount of outflow, and the inflow in the previous situation is decreasing,
+so the volume is decreasing and the outflow is decreasing.
+
+Rule 2: With maximum volume, the inflow has to be positive.
+There is a maximum amount of volume, so there has to be some inflow
+
+Rule 3: When max volume in the previous situation, the inflow has to be positive.
+There is a maximum amount of volume in the previous situation, so there has to be some inflow
+
+Prototype 1 result:
+inflow : (+, -)
+volume : (max, -)
+outflow: (max, -)
+
+
+For prototype no 2:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and a maximum amount of outflow, and the inflow in the previous situation is decreasing,
+so the volume is decreasing and the outflow is decreasing.
+
+Rule 2: With maximum volume, the inflow has to be positive.
+There is a maximum amount of volume, so there has to be some inflow
+
+Rule 3: When max volume in the previous situation, the inflow has to be positive.
+There is a maximum amount of volume in the previous situation, so there has to be some inflow
+
+Prototype 2 result:
+inflow : (+, -)
+volume : (max, -)
+outflow: (max, -)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was close the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (max, -)
+outflow: (max, -)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (max, -)
+outflow: (max, -)
+
+
+Now some action(s) for prototype 2 on the tap can be performed.
+If the last action was close the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (max, -)
+outflow: (max, -)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (max, -)
+outflow: (max, -)
+
+-----------------------------------------------------
+State 16
+Current node:
+inflow : (0, +)
+volume : (+, -)
+outflow: (+, -)
+
+The current situation:
+There is no inflow and the inflow is increasing.
+There is some volume and the volume is decreasing.
+There is some outflow and the outflow is decreasing.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is increasing, so there will be some inflow.
+The volume is decreasing, so there will be no volume.
+The outflow is decreasing, so there will be no outflow.
+
+Prototype 2 was created:
+There some volume and it still is decreasing without reaching 0, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and no outflow, and the inflow in the previous situation is increasing,
+so the volume is increasing and the outflow is increasing.
+
+Prototype 1 result:
+inflow : (+, +)
+volume : (0, +)
+outflow: (0, +)
+
+
+For prototype no 2:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation is increasing,
+so the volume is increasing and the outflow is increasing.
+
+Prototype 2 result:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was open the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (0, +)
+outflow: (0, +)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (0, +)
+outflow: (0, +)
+
+
+Now some action(s) for prototype 2 on the tap can be performed.
+If the last action was open the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, +)
+outflow: (+, +)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, +)
+outflow: (+, +)
+
+-----------------------------------------------------
+State 17
+Current node:
+inflow : (+, 0)
+volume : (max, -)
+outflow: (max, -)
+
+The current situation:
+There is some inflow and the inflow remains the same.
+There is a maximum amount of volume and the volume is decreasing.
+There is a maximum amount of outflow and the outflow is decreasing.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow remains the same, so there will be some inflow.
+The volume is decreasing, so there will be some volume.
+The outflow is decreasing, so there will be some outflow.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and some outflow, and the inflow in the previous situation remains the same,
+so the volume remains the same and the outflow remains the same.
+
+Rule 3: When max volume in the previous situation, the inflow has to be positive.
+There is a maximum amount of volume in the previous situation, so there has to be some inflow
+
+Prototype 1 result:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was doing nothing, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, 0)
+outflow: (+, 0)
+
+open the tap, which results in the following child:
+inflow : (+, +)
+volume : (+, 0)
+outflow: (+, 0)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (+, 0)
+outflow: (+, 0)
+
+-----------------------------------------------------
+State 18
+Current node:
+inflow : (+, -)
+volume : (max, -)
+outflow: (max, -)
+
+The current situation:
+There is some inflow and the inflow is decreasing.
+There is a maximum amount of volume and the volume is decreasing.
+There is a maximum amount of outflow and the outflow is decreasing.
+
+Rule 0: Derivative changes next state's values
+Prototype 1 was created:
+The inflow is decreasing, so there will be no inflow.
+The volume is decreasing, so there will be some volume.
+The outflow is decreasing, so there will be some outflow.
+
+Prototype 2 was created:
+There some inflow and it still is decreasing without reaching 0, so it stays positive.
+
+For prototype no 1:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There no inflow and some outflow, and the inflow in the previous situation is decreasing,
+so the volume is decreasing and the outflow is decreasing.
+
+Rule 3: When max volume in the previous situation, the inflow has to be positive.
+There is a maximum amount of volume in the previous situation, so there has to be some inflow
+
+Prototype 1 result:
+inflow : (+, -)
+volume : (+, -)
+outflow: (+, -)
+
+
+For prototype no 2:
+
+Rule 1: Count inflow value and outflow value of the current state and
+inflow derivative of the previous state to determine the current state's
+volume and outflow derivative.
+There some inflow and a maximum amount of outflow, and the inflow in the previous situation is decreasing,
+so the volume is decreasing and the outflow is decreasing.
+
+Rule 2: With maximum volume, the inflow has to be positive.
+There is a maximum amount of volume, so there has to be some inflow
+
+Rule 3: When max volume in the previous situation, the inflow has to be positive.
+There is a maximum amount of volume in the previous situation, so there has to be some inflow
+
+Prototype 2 result:
+inflow : (+, -)
+volume : (max, -)
+outflow: (max, -)
+
+
+Now some action(s) for prototype 1 on the tap can be performed.
+If the last action was close the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (+, -)
+outflow: (+, -)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (+, -)
+outflow: (+, -)
+
+
+Now some action(s) for prototype 2 on the tap can be performed.
+If the last action was close the tap, the next actions include:
+doing nothing, which results in the following child:
+inflow : (+, 0)
+volume : (max, -)
+outflow: (max, -)
+
+close the tap, which results in the following child:
+inflow : (+, -)
+volume : (max, -)
+outflow: (max, -)
